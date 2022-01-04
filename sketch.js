@@ -84,20 +84,20 @@ function draw() {
 
   if (gameState === "Play") {
     if (keyIsDown(UP_ARROW) || keyIsDown(87)) {
-      bee.y -= 15;
+      bee.y -= 5;
     }
 
-    if (keyIsDown(DOWN_ARROW)) {
-      bee.y += 15;
+    if (keyIsDown(DOWN_ARROW) || keyIsDown(83) {
+      bee.y += 5;
     }
 
-    if (keyIsDown(LEFT_ARROW)) {
-      bee.x -= 15;
+    if (keyIsDown(LEFT_ARROW) || keyIsDown(65) {
+      bee.x -= 5;
       bee.changeImage("beeFlipped", beeFliped);
     }
 
-    if (keyIsDown(RIGHT_ARROW)) {
-      bee.x += 15;
+    if (keyIsDown(RIGHT_ARROW) || keyISDown(68) {
+      bee.x += 5;
       bee.changeImage("bee", beeImage);
     }
 
